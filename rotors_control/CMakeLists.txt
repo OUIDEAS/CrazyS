@@ -107,6 +107,10 @@ target_link_libraries(position_controller_node
   position_controller crazyflie_complementary_filter crazyflie_onboard_controller
   sensfusion6 mellinger_controller internal_model_controller ${catkin_LIBRARIES})
 
+add_executable(CrazyFlie_Position_Control src/nodes/CrazyFlie_Position_Control.cpp)
+add_dependencies(CrazyFlie_Position_Control ${catkin_EXPORTED_TARGETS})
+target_link_libraries(CrazyFlie_Position_Control position_controller crazyflie_complementary_filter crazyflie_onboard_controller sensfusion6 mellinger_controller internal_model_controller ${catkin_LIBRARIES})
+
 add_executable(roll_pitch_yawrate_thrust_controller_node
   src/nodes/roll_pitch_yawrate_thrust_controller_node.cpp)
 add_dependencies(roll_pitch_yawrate_thrust_controller_node ${catkin_EXPORTED_TARGETS})
