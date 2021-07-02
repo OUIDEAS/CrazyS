@@ -87,6 +87,10 @@ add_executable(hovering_example src/nodes/hovering_example.cpp)
 target_link_libraries(hovering_example ${catkin_LIBRARIES})
 add_dependencies(hovering_example ${catkin_EXPORTED_TARGETS})
 
+add_executable(altitude_control_ src/nodes/altitude_control_.cpp)
+target_link_libraries(altitude_control_ ${catkin_LIBRARIES})
+add_dependencies(altitude_control_ ${catkin_EXPORTED_TARGETS})
+
 add_executable(hovering_example_spline src/nodes/hovering_example_spline.cpp)
 target_link_libraries(hovering_example_spline spline_trajectory_generator ${catkin_LIBRARIES})
 add_dependencies(hovering_example_spline ${catkin_EXPORTED_TARGETS})
