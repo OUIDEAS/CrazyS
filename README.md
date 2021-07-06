@@ -62,7 +62,7 @@ $ catkin_init_workspace  # initialize your catkin workspace
 $ cd ~/catkin_ws/
 $ catkin init
 $ cd ~/catkin_ws/src
-$ git clone -b dev/ros-melodic https://github.com/gsilano/CrazyS.git
+$ git clone -b dev/ros-melodic https://github.com/OUIDEAS/CrazyS.git
 $ git clone -b med18_gazebo9 https://github.com/gsilano/mav_comm.git
 $ cd ~/catkin_ws
 ```
